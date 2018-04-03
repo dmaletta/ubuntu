@@ -33,7 +33,7 @@
     - { role: nginx-application-symfony3, when: "'symfony3' in applications" }
     - { role: nginx-application-symfony-flex, when: "'symfony-flex' in applications" }
     - { role: nginx-application-wordpress4, when: "'wordpress4' in applications" }
-    - nginx
+    - { role: nginx, when: webserver == 'nginx' }
     - { role: nodejs-4-original, when: role.nodejs and nodejs.version == '4-original' }
     - { role: nodejs-4, when: role.nodejs and nodejs.version == 4 }
     - { role: nodejs-5, when: role.nodejs and nodejs.version == 5 }

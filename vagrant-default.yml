@@ -12,6 +12,8 @@ sharetype: nfs
 cpus: ~
 memory: 1024
 
+webserver: nginx
+
 network:
     forwarded_ports:
         ssh:
