@@ -73,6 +73,7 @@ for advanced configuration see the [default configuration][2]
  * drupal8
  * lavarel5
  * magento1
+ * node
  * shopware
  * slim3
  * symfony1
