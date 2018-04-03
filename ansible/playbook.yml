@@ -41,12 +41,12 @@
     - { role: nodejs-7, when: role.nodejs and nodejs.version == 7 }
     - { role: nodejs-8, when: role.nodejs and nodejs.version == 8 }
     - { role: nodejs-9, when: role.nodejs and nodejs.version == 9 }
-    - { role: php-7.0-original, when: php.version == '7.0-original' }
-    - { role: php-7.0, when: php.version == 7.0 }
-    - { role: php-7.1, when: php.version == 7.1 }
-    - { role: php-7.2, when: php.version == 7.2 }
-    - php-tools
-    - php-application
+    - { role: php-7.0-original, when: role.php and php.version == '7.0-original' }
+    - { role: php-7.0, when: role.php and php.version == 7.0 }
+    - { role: php-7.1, when: role.php and php.version == 7.1 }
+    - { role: php-7.2, when: role.php and php.version == 7.2 }
+    - { role: php-tools, when: role.php }
+    - { role: php-application, when: role.php }
     - { role: php-application-drupal7, when: "'drupal7' in applications" }
     - { role: php-application-drupal8, when: "'drupal8' in applications" }
     - { role: php-application-slim3, when: "'slim3' in applications" }
