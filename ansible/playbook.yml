@@ -13,7 +13,7 @@
     - { role: mongodb, when: role.mongodb }
     - { role: nginx, when: role.nginx }
     - { role: nodejs, when: role.nodejs }
-    - php
+    - { role: php, when: role.php }
     - { role: postfix, when: role.postfix }
     - { role: postgresql, when: role.postgresql }
     - { role: rabbitmq, when: role.rabbitmq }
